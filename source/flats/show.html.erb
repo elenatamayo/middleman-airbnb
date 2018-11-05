@@ -1,0 +1,29 @@
+<% flat = data.flats[owner] %>
+
+<!-- Inject flat data in template -->
+<% flat = data.flats[owner] %>
+
+<!-- Inject flat data in template -->
+
+<div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('https://kitt.lewagon.com/placeholder/cities/city_name');">
+  <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{owner}", class: "img-circle" %>
+  <p><%= flat.name %></p>
+  <h1><%= flat.description %></h1>
+  <p><%= flat.city_name %></p>
+
+  <form class="form-column">
+    <div class="form-group">
+      <label for="exampleInputWhere?"></label>
+      <input type="checkin" class="form-control" id="exampleInputcheckin1" placeholder="checkin">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputcheckout"></label>
+      <input type="checkout" class="form-control" id="exampleInputWhere1" placeholder="checkout">
+    </div>
+    <select class="form-control form-control-lg">
+      <option>1 guest</option>
+    </select>
+    <a class="btn btn-primary btn-lg">Book it</a>
+  </div>
+</form>
+</div>
